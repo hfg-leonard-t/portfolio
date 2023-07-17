@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: auto;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    hyphens: auto;
+    -webkit-hyphenate-character: '-';
+    hyphenate-character: '-';
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+:root {
+    --ff-primary: 'Clash Display', 'Open Sans', 'Fira Sans', 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --fw-black: 900;
+}
+
+.watermark-wrap {
+    overflow: hidden;
+}
+
+span {
+    display: inline-block;
+    font-size: 30vw;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-black);
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
