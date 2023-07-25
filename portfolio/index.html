@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Leonard Thillmann</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">LT</div>
+      <div class="menu">
+        <button class="menu-button">About me</button>
+        <button class="menu-button">Projects</button>
+        <button class="menu-contact">Contact me</button>
+      </div>
+    </div>
+
+    <article class="reveal">
+      <div class="center-info">
+        <div class="role">Designer / Developer</div>
+        <div class="name">Leonard Thillmann</div>
+        <div class="qualification">bachelor graduate | Internet of Things</div>
+        <div class="ellipse-green-initial"></div>
+        <div class="scroll-wrapper">
+          <div class="scroll-hint">Scroll to explore</div>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </article>
+
+    <section class="page-content">
+      <section class="about-me">
+        <div class="ellipse-green"></div>
+        <article class="reveal">
+          <div class="section-headline">About me</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            aliquam molestiae sint esse officiis reprehenderit ad? Eos, nihil ea
+            nemo fugiat assumenda laboriosam quasi, enim rerum pariatur
+            repudiandae nam beatae! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Fugit quia voluptatibus reprehenderit perferendis
+            rem molestiae aspernatur deleniti voluptatem temporibus. Praesentium
+            maiores velit sed ratione officiis dolore atque optio deserunt
+            distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis error ipsam temporibus enim nostrum quia sint in eius at.
+            Dolorum voluptatem fugiat tempore placeat error veritatis saepe
+            nulla porro ipsa!
+          </p>
+        </article>
+      </section>
+
+      <section class="projects">
+        <article class="reveal">
+          <div class="section-headline">Projects</div>
+          <!-- MICROPLASTIC-SCANNER -->
+          <div class="semester-wrapper">
+            <div class="line"></div>
+            <div class="semester">6. Semester</div>
+          </div>
+          <p class="project-headline">Microplastic-Scanner</p>
+          <p class="project-description">
+            A interactive exhibit to reveal how much microplastic is contained
+            in daily objects.
+          </p>
+        </article>
+        <img
+          src="./assets/microplastic_scanner.png"
+          alt="microplastic-scanner"
+          width="100%"
+          class="project-img"
+        />
+
+        <!-- QUELLE -->
+        <div class="ellipse-orange"></div>
+        <article class="reveal">
+          <div class="semester-wrapper" style="margin-top: 160px">
+            <div class="semester">4. Semester</div>
+            <div class="line"></div>
+          </div>
+          <p class="project-headline">Quelle</p>
+          <p class="project-description">
+            Vending machine for customizable and sustainable soft drinks.
+          </p>
+        </article>
+        <img
+          src="./assets/quelle.png"
+          alt="quelle"
+          width="100%"
+          id="quelle"
+          class="project-img"
+        />
+
+        <!-- NUBANK -->
+        <div class="ellipse-green"></div>
+        <article class="reveal">
+          <div class="semester-wrapper" style="margin-top: 160px">
+            <div class="line"></div>
+            <div class="semester">3. Semester</div>
+          </div>
+          <p class="project-headline">Nubank</p>
+          <p class="project-description">
+            A concept for an user friendly online banking app.
+          </p>
+        </article>
+        <img
+          src="./assets/nubank.png"
+          alt="quelle"
+          width="100%"
+          id="quelle"
+          class="project-img"
+        />
+
+        <article class="reveal">
+          <div class="more-wrapper">
+            <p class="more">More</p>
+            <img src="./assets/more.svg" alt="more" />
+          </div>
+        </article>
+
+        <article class="reveal">
+          <div class="contact-wrapper">
+            <p>
+              Let's work something<br />
+              out together!
+            </p>
+            <button>Contact me</button>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footer-glow-wrapper">
+        <div class="footer-glow"></div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-logo">LT</div>
+        <div class="footer-menu-wrapper">
+          <div>About me</div>
+          <div>Projects</div>
+          <div>Contact me</div>
+        </div>
+        <div class="icon-wrapper">
+          <img src="./assets/email.svg" alt="email" height="32px" />
+          <img src="./assets/linkedin.svg" alt="linkedin" height="32px" />
+          <img src="./assets/github.svg" alt="github" height="32px" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
