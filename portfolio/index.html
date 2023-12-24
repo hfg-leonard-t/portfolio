@@ -18,19 +18,23 @@
   </head>
   <body>
     <div class="nav idle-animation">
-      <img src="./assets/logo.png" class="logo"></img>
+      <div class="logo">
+        <a href="" style="text-decoration: dashed; color: white">Portfolio</a>
+      </div>
       <div class="menu">
-        <button class="menu-button">About me</button>
-        <button class="menu-button">Projects</button>
-        <button class="menu-contact">Contact me</button>
+        <a href="#about-me" class="menu-button">About me</a>
+        <a href="#projects" class="menu-button">Projects</a>
+        <a href="mailto:thillmannleonard@gmail.com" class="menu-contact"
+          >Contact me</a
+        >
       </div>
     </div>
 
     <div class="idle-animation">
       <div class="center-info">
-        <div class="role">Designer / Developer</div>
+        <div class="role">Digital Product Designer and Developer</div>
         <div class="name">Leonard Thillmann</div>
-        <div class="qualification">bachelor graduate | Internet of Things</div>
+        <div class="qualification">Bachelor Graduate - Internet of Things</div>
         <div class="ellipse-green-initial"></div>
       </div>
     </div>
@@ -41,32 +45,51 @@
       <div class="scroll-line"></div>
     </div>
 
+    <!-- CONTENT -->
     <section class="page-content">
-      <section class="about-me">
+      <section id="about-me" class="about-me">
         <div class="ellipse-green"></div>
         <article class="reveal">
           <div class="section-headline">About me</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            aliquam molestiae sint esse officiis reprehenderit ad? Eos, nihil ea
-            nemo fugiat assumenda laboriosam quasi, enim rerum pariatur
-            repudiandae nam beatae! Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Fugit quia voluptatibus reprehenderit perferendis
-            rem molestiae aspernatur deleniti voluptatem temporibus. Praesentium
-            maiores velit sed ratione officiis dolore atque optio deserunt
-            distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Corporis error ipsam temporibus enim nostrum quia sint in eius at.
-            Dolorum voluptatem fugiat tempore placeat error veritatis saepe
-            nulla porro ipsa!
+            I'm a dedicated tech enthusiast with a passion for web development
+            and the creation of hands-on prototypes, especially using Arduino or
+            other microcontrollers. I have interests that go beyond my work, as
+            I enjoy bouldering, swimming, and engaging in hobbies like 3D
+            printing, assembling PCs, and exploring AR-VR technologies. My
+            expertise in web development is backed by solid experience in
+            JavaScript, HTML, CSS, Vue.js, React.js, C++ and more. This
+            background fuels my excitement for crafting and improving full stack
+            experiences. Additionally, my hands-on approach shines in hardware
+            prototype building, where I excel in bringing ideas to life through
+            functional prototypes and test setups. Through my studies I'm also
+            adept in UI/UX design, ensuring that the interfaces I build are not
+            only aesthetically pleasing but also user-friendly. Beyond my
+            technical skills, I'm known for my punctuality, organization, and
+            reliability. I thrive in team environments, comfortably adapting to
+            either collaborative or leadership roles. My array of skills and
+            qualifications are broad and versatile, and I'm excited to apply
+            them in my next professional chapter.
           </p>
         </article>
       </section>
 
       <section class="projects">
         <article class="reveal">
-          <div class="section-headline">Projects</div>
-          <!-- MICROPLASTIC-SCANNER -->
+          <div class="section-headline" id="projects">Projects</div>
+          <!-- Bachelor Projekt -->
           <div class="semester-wrapper">
+            <div class="line"></div>
+            <div class="semester">7. Semester</div>
+          </div>
+          <p class="project-headline">ULTRAVIEW</p>
+          <p class="project-description">
+            Bachrlor project<br />Coming soon...
+          </p>
+        </article>
+        <article class="reveal">
+          <!-- MICROPLASTIC-SCANNER -->
+          <div class="semester-wrapper" style="margin-top: 160px">
             <div class="line"></div>
             <div class="semester">6. Semester</div>
           </div>
@@ -77,20 +100,66 @@
           </p>
         </article>
         <div class="image-container">
-          <img
-          src="./assets/microplastic_scanner.png"
-          alt="microplastic-scanner"
-          width="100%"
-          class="project-img"
-        />
+          <a href="microplastic-scanner.html"
+            ><img
+              src="./assets/microplastic_scanner.jpg"
+              alt="microplastic-scanner"
+              width="100%"
+              class="project-img"
+            />
+          </a>
         </div>
-        
 
-        <!-- QUELLE -->
+        <article class="reveal">
+          <!-- PRAXISSEMESTER -->
+          <div class="semester-wrapper" style="margin-top: 160px">
+            <div class="line"></div>
+            <div class="semester">5. Semester</div>
+          </div>
+          <p class="project-headline">Internship Semester</p>
+          <p class="project-description">
+            Web development internship at Fututice GmbH.
+          </p>
+        </article>
+        <div class="image-container">
+          <a href="praxissemester.html"
+            ><img
+              src="./assets/redbullmuenchen.png"
+              alt="redbullmuenchen"
+              width="100%"
+              id="redbullmuenchen"
+              class="project-img"
+          /></a>
+        </div>
+
+        <!-- MEMORISE -->
         <div class="ellipse-orange"></div>
         <article class="reveal">
           <div class="semester-wrapper" style="margin-top: 160px">
             <div class="semester">4. Semester</div>
+            <div class="line"></div>
+          </div>
+          <p class="project-headline">Memorise</p>
+          <p class="project-description">
+            A virtual reality learning concept for more fun and efficiency
+            through the use of memory methods.
+          </p>
+        </article>
+        <div class="image-container">
+          <a href="./memorise.html"
+            ><img
+              src="./assets/memorise.png"
+              alt="memorise"
+              width="100%"
+              id="memorise"
+              class="project-img"
+          /></a>
+        </div>
+
+        <!-- QUELLE -->
+        <article class="reveal">
+          <div class="semester-wrapper" style="margin-top: 160px">
+            <div class="semester">3. Semester</div>
             <div class="line"></div>
           </div>
           <p class="project-headline">Quelle</p>
@@ -99,61 +168,40 @@
           </p>
         </article>
         <div class="image-container">
-          <img
-          src="./assets/quelle.png"
-          alt="quelle"
-          width="100%"
-          id="quelle"
-          class="project-img"
-        />
+          <a href="quelle.html">
+            <img
+              src="./assets/quelle.png"
+              alt="quelle"
+              width="100%"
+              id="quelle"
+              class="project-img"
+          /></a>
         </div>
-        
-
-        <!-- NUBANK -->
-        <div class="ellipse-green"></div>
-        <article class="reveal">
-          <div class="semester-wrapper" style="margin-top: 160px">
-            <div class="line"></div>
-            <div class="semester">3. Semester</div>
-          </div>
-          <p class="project-headline">Nubank</p>
-          <p class="project-description">
-            A concept for an user friendly online banking app.
-          </p>
-        </article>
-        <div class="image-container">
-          <img
-          src="./assets/nubank.png"
-          alt="quelle"
-          width="100%"
-          id="quelle"
-          class="project-img"
-        />
-        </div>
-
-        <!-- <div class="more-wrapper">
-          <p class="more">More work</p>
-          <img src="./assets/more.svg" alt="more" />
-        </div> -->
 
         <div class="threeExplanationWrapper">
           <div class="threeExplanation">
-            This is a small selection of 3D models I created and 3D printed.<br/>It should just preview some of my work.
+            This is a small collection of 3D models I designed and constructed
+            for 3D printing.<br />It should just preview some of my work.
           </div>
         </div>
-        
       </section>
     </section>
 
     <div id="scene-container"></div>
-  
+
     <article class="reveal">
       <div class="contact-wrapper">
+        <img
+          height="300px"
+          style="border-radius: 50%"
+          src="./assets/portrait.jpg"
+          alt=""
+        />
         <p>
           Let's work something<br />
           out together!
         </p>
-        <button>Contact me</button>
+        <a href="mailto:thillmannleonard@gmail.com">Contact me</a>
       </div>
     </article>
 
@@ -162,18 +210,28 @@
         <div class="footer-glow"></div>
       </div>
       <div class="footer-wrapper">
-        <div class="footer-logo">
-          <img src="./assets/logo.png" height="72px" width="119px"></img>
+        <div class="footer-logo-wrapper">
+          <div class="logo">
+            <a href="" style="text-decoration: dashed; color: white"
+              >Portfolio</a
+            >
+          </div>
         </div>
         <div class="footer-menu-wrapper">
-          <div>About me</div>
-          <div>Projects</div>
-          <div>Contact me</div>
+          <a href="#about-me">About me</a>
+          <a href="#projects">Projects</a>
+          <a href="mailto:thillmannleonard@gmail.com">Contact me</a>
         </div>
         <div class="icon-wrapper">
-          <img src="./assets/email.svg" alt="email" height="32px" />
-          <img src="./assets/linkedin.svg" alt="linkedin" height="32px" />
-          <img src="./assets/github.svg" alt="github" height="32px" />
+          <a href="mailto:thillmannleonard@gmail.com"
+            ><img src="./assets/email.svg" alt="email" height="32px"
+          /></a>
+          <a href="https://www.linkedin.com/in/leonard-thillmann-a33a22201/"
+            ><img src="./assets/linkedin.svg" alt="linkedin" height="32px"
+          /></a>
+          <a href="https://github.com/hfg-leonard-t"
+            ><img src="./assets/github.svg" alt="github" height="32px"
+          /></a>
         </div>
       </div>
     </footer>
@@ -181,6 +239,4 @@
   </body>
   <script type="module" src="./index.js"></script>
   <script type="module" src="./threeSection.js"></script>
-  <!-- <script type="module" src="./threeSectionOld.js"></script> -->
-  <!-- <script type="module" src="./threeSectionTest.js"></script> -->
 </html>

@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 let sceneInitialized = false;
 
-const scrollTriggerElement = document.getElementsByClassName("more-wrapper");
+const scrollTriggerElement = document.getElementsByClassName("scene-container");
 
 ScrollTrigger.create({
   trigger: scrollTriggerElement,
@@ -37,30 +37,10 @@ const initializeScene = () => {
 
     const materials = [
       new THREE.MeshStandardMaterial({
-        color: 0x7cb9e8,
-        roughness: 0.2,
-        metalness: 0.8,
+        color: 0xffffff,
+        roughness: 0,
+        metalness: 0.25,
       }), // Light Blue
-      new THREE.MeshStandardMaterial({
-        color: 0xd2527f,
-        roughness: 0.4,
-        metalness: 0.6,
-      }), // Mauve
-      new THREE.MeshStandardMaterial({
-        color: 0x9b59b6,
-        roughness: 0.3,
-        metalness: 0.7,
-      }), // Purple
-      new THREE.MeshStandardMaterial({
-        color: 0x1abc9c,
-        roughness: 0.2,
-        metalness: 0.8,
-      }), // Teal
-      new THREE.MeshStandardMaterial({
-        color: 0xe74c3c,
-        roughness: 0.5,
-        metalness: 0.5,
-      }), // Red
     ];
 
     const draggableObjects = [];

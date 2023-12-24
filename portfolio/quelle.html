@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- 3D Model Section -->
+    <script src="./lib/three.min.js"></script>
+    <script src="./lib/GLTFLoader.js"></script>
+    <script src="./lib/enable3d.ammoPhysics.0.25.3.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <title>Leonard Thillmann</title>
+  </head>
+  <body>
+    <div class="project-nav idle-animation">
+      <div class="logo">
+        <a href="../" style="text-decoration: dashed; color: white"
+          >Portfolio</a
+        >
+      </div>
+      <div class="menu">
+        <a href="index.html#about-me" class="menu-button">About me</a>
+        <a href="index.html#projects" class="menu-button">Projects</a>
+        <a href="mailto:thillmannleonard@gmail.com" class="menu-contact"
+          >Contact me</a
+        >
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header idle-animation">
+        <span class="topic">DEVELOPMENT / PROTOTYPING</span>
+        <span class="title">quelle</span>
+      </div>
+      <div class="header idle-animation">
+        <img
+          style="object-fit: cover; object-position: top"
+          class="header-img"
+          src="./assets/quelle.png"
+          alt=""
+        />
+        <div class="scroll-down">
+          <hr />
+          <span>scroll down</span>
+        </div>
+      </div>
+    </div>
+    <div class="ellipse-green"></div>
+
+    <!-- CONTENT -->
+    <section class="page-content">
+      <!-- INFO -->
+      <article class="reveal">
+        <div class="info">
+          <div style="flex: 1">
+            <div class="info-container">
+              <span class="info-title">Semester</span>
+              <span class="info-value">Winter Semester 2021/22</span>
+            </div>
+            <div class="info-container">
+              <span class="info-title">Group Members</span>
+              <span class="info-value">Tim Seib</span>
+            </div>
+          </div>
+          <div style="flex: 1">
+            <div class="info-container">
+              <span class="info-title">Personal contribution</span>
+              <span class="info-value"
+                >Programming of the Application Frontend & Backend, Hardware
+                prototyping, 3D Rendering, 3D construction, 3D Printing,
+                Conceptualization</span
+              >
+            </div>
+            <div class="info-container">
+              <span class="info-title">Description</span>
+              <span class="info-value"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
+                incidunt! Dolorum saepe, dolores nihil voluptatem illo facilis
+                doloribus, modi reiciendis repellat odio quas eveniet, nemo
+                tempore cum. Asperiores, qui ad.</span
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- IMAGES -->
+      <div class="image-headline">
+        <span>VISUALS</span>
+        <hr />
+      </div>
+      <div class="iframe-container">
+        <iframe
+          src="https://www.youtube.com/embed/OH7_XODI1_c"
+          frameborder="0"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="collection-img"
+          src="./assets/quelle/electronics.jpg"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <img
+          class="collection-img"
+          src="./assets/quelle/brand.jpg"
+          alt="room"
+        />
+      </div>
+
+      <div class="image-container">
+        <img
+          class="collection-img"
+          src="./assets/quelle/perfusors.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="image-container">
+        <img
+          class="collection-img"
+          src="./assets/quelle/perfusor-rendering.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="image-container">
+        <img
+          class="collection-img"
+          src="./assets/quelle/photoshoot.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="ellipse-orange"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-glow-wrapper">
+        <div class="footer-glow"></div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-logo-wrapper">
+          <div class="logo">
+            <a href="../" style="text-decoration: dashed; color: white"
+              >Portfolio</a
+            >
+          </div>
+        </div>
+        <div class="footer-menu-wrapper">
+          <a href="index.html#about-me">About me</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="mailto:thillmannleonard@gmail.com">Contact me</a>
+        </div>
+        <div class="icon-wrapper">
+          <a href="mailto:thillmannleonard@gmail.com"
+            ><img src="./assets/email.svg" alt="email" height="32px"
+          /></a>
+          <a href="https://www.linkedin.com/in/leonard-thillmann-a33a22201/"
+            ><img src="./assets/linkedin.svg" alt="linkedin" height="32px"
+          /></a>
+          <a href="https://github.com/hfg-leonard-t"
+            ><img src="./assets/github.svg" alt="github" height="32px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <div id="test"></div>
+  </body>
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./threeSection.js"></script>
+</html>

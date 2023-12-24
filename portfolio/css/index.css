@@ -1,5 +1,10 @@
 :root {
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -17,11 +22,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1120px;
+  max-width: 1118px;
   margin: auto;
 }
 
 .nav  {
+  z-index: 10;
   position: absolute;
   width: 100vw;
   color: white;
@@ -30,12 +36,10 @@ p {
 }
 
 .logo {
-  height: 72px;
   color: white;
-  font-family: Lato;
   font-size: 32px;
-  font-weight: 900;
-  margin: 40px;
+  font-weight: 700;
+  margin: 32px;
 }
 
 .menu {
@@ -45,18 +49,22 @@ p {
 
 .menu-button {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  margin: 40px;
+  margin: 16px;
   border: none;
   background: none;
+  padding: 24px;
+  text-decoration: none;
 }
 
 .menu-contact {
+  text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 40px;
+  padding: 24px;
+  margin: 16px;
   border: none;
   background-color: #00B381;
 }
@@ -152,9 +160,10 @@ p {
 
 .about-me p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin: 40px 0 0 0;
+  line-height: 150%;
 }
 
 .projects {
@@ -199,15 +208,14 @@ p {
 
 .project-description {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin-top: 16px;
   margin-bottom: 40px;
 }
 
 .project-img {
-  border: 0.5px solid #505050;
-  border-radius: 32px;
+  transition: transform 0.3s ease;
 }
 
 .more-wrapper {
@@ -229,6 +237,7 @@ p {
   margin-top: 160px;
   position: relative;
   left: 0;
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
 
 .contact-wrapper {
@@ -236,7 +245,6 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  margin-top: 80px;
 }
 
 .contact-wrapper p {
@@ -246,14 +254,14 @@ p {
   text-align: center;
 }
 
-.contact-wrapper button {
+.contact-wrapper a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 32px;
+  padding: 24px;
   border: none;
+  text-decoration: none;
   background-color: #00B381;
-  border-radius: 12px;
 }
 
 footer {
@@ -266,17 +274,11 @@ footer {
 
 .footer-wrapper {
   display: flex;
+  flex: 1 1 1;
   flex-direction: row;
   justify-content: space-between;
-  width: 1120px;
+  width: 80%;
   margin: auto;
-}
-
-.footer-logo {
-  color: white;
-  font-size: 32px;
-  font-weight: 900;
-  flex: 1;
 }
 
 .footer-menu-wrapper {
@@ -288,9 +290,10 @@ footer {
   flex: 1;
 }
 
-.footer-menu-wrapper div {
+.footer-menu-wrapper a {
+  text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   flex: 1;
 }
@@ -301,6 +304,7 @@ footer {
   gap: 32px;
   flex: 1;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .footer-glow-wrapper {
@@ -310,8 +314,13 @@ footer {
   z-index: -1;
 }
 
+.footer-logo-wrapper {
+  flex: 1;
+  margin: auto;
+}
+
 .footer-glow {
-  width: 1120px;
+  width: 1118px;
   height: 60px;
   border-radius: 50%;
   background: #00B381;
@@ -327,8 +336,9 @@ footer {
   border-radius: 100%;
   background-color: #e2ac70;
   opacity: .3;
-  filter: blur(120px);
-  right: -300px;
+  filter: blur(118px);
+  left: -300px;
+  z-index: -1;
 }
 
 .ellipse-green {
@@ -339,10 +349,10 @@ footer {
   min-width: 300px;
   border-radius: 100%;
   background-color: #00b381;
-  opacity: .4;
-  filter: blur(120px);
-  left: -300px;
-  bottom: auto;
+  opacity: .3;
+  filter: blur(118px);
+  right: -300px;
+  z-index: -1;
 }
 
 /* animation that moves up and down */
@@ -395,10 +405,10 @@ footer {
   color: white;
   position: relative;
   font-style: italic;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   line-height: 150%;
-  top: 100vh;
+  top: 20vh;
   z-index: 10;
   animation: scroll-hint 4s infinite;
 }
