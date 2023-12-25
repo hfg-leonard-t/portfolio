@@ -75,6 +75,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-y: hidden; /* Added to hide overflow */
 }
 
 .role {
@@ -337,7 +338,7 @@ footer {
   background-color: #e2ac70;
   opacity: .3;
   filter: blur(118px);
-  left: -300px;
+  left: 0;
   z-index: -1;
 }
 
@@ -350,8 +351,8 @@ footer {
   border-radius: 100%;
   background-color: #00b381;
   opacity: .3;
+  right: 0;
   filter: blur(118px);
-  right: -300px;
   z-index: -1;
 }
 
