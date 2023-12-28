@@ -22,7 +22,10 @@
 
 .topic {
     font-size: 16px;
-    color: #D78B30;
+    background: linear-gradient(335deg, #822E01 0%, #A7501A 13.00%, #E7A776 35.00%, #FDB993 43.00%, #FFD5BD 50%, #FDB993 58.00%, #DB8D5D 67.00%, #BA6329 89.00%, #822E01 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title {
@@ -63,20 +66,25 @@
 }
 
 .info-title {
-    color: #D78B30;
+    display: inline;
     font-size: 18px;
-    margin-bottom: 8px;
+    background: linear-gradient(335deg, #822e01, #a7501a 13%, #e7a776 35%, #fdb993 43%, #ffd5bd 50%, #fdb993 58%, #db8d5d 67%, #ba6329 89%, #822e01);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2;
 }
 
 .info-value {
     color: white;
     font-size: 16px;
+    font-weight: 300;
 }
 
 .info-container {
-    display: flex;
+    display: flex-start;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 .image-headline {
@@ -84,7 +92,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 320px;
     margin-bottom: 32px;
 }
 
@@ -100,13 +108,13 @@
 }
 
 .collection-img {
-    margin-bottom: 128px;
+    margin-bottom: 240px;
     width: 100%;
     height: 100%;
 }
 
 .iframe-container {
-    margin-bottom: 128px;
+    margin-bottom: 240px;
     position: relative;
     width: 100%;
     height: 0;

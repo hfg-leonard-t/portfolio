@@ -20,7 +20,7 @@
   <body>
     <div class="nav idle-animation">
       <div class="logo">
-        <a href="./index.html" style="text-decoration: dashed; color: white"
+        <a href="./index.html" style="text-decoration: none; color: white"
           >Portfolio</a
         >
       </div>
@@ -54,26 +54,38 @@
         <div class="ellipse-green"></div>
         <article class="reveal">
           <div class="section-headline">About me</div>
-          <p>
-            I'm a dedicated tech enthusiast with a passion for web development
-            and the creation of hands-on prototypes, especially using Arduino
-            and other microcontrollers. I have interests that go beyond my work,
-            as I enjoy bouldering, swimming, and engaging in hobbies like 3D
-            printing, assembling PCs, and exploring AR-VR technologies. My
-            expertise in web development is backed by solid experience in
-            JavaScript, HTML, CSS, React.js, Vue.js, C++ and more. This
-            background fuels my excitement for crafting and improving full stack
-            experiences. Additionally, my hands-on approach shines in hardware
-            prototype building, where I excel in bringing ideas to life through
-            functional prototypes and test setups. Through my studies I'm also
-            adept in UI/UX design, ensuring that the interfaces I build are not
-            only aesthetically pleasing but also user-friendly. Beyond my
-            technical skills, I'm known for my punctuality, organization, and
-            reliability. I thrive in team environments, comfortably adapting to
-            either collaborative or leadership roles. My array of skills and
-            qualifications are broad and versatile, and I'm excited to apply
-            them in my next professional chapter.
-          </p>
+          <div class="about-me-wrapper">
+            <div class="about-me-flex-item">
+              <img class="about-me-image" src="./assets/portrait.jpg" alt="" />
+            </div>
+            <div class="about-me-flex-item">
+              <p>
+                I'm a dedicated tech enthusiast with a passion for web
+                development and the creation of hands-on prototypes, especially
+                using Arduino and other microcontrollers. I have interests that
+                go beyond my work, as I enjoy bouldering, swimming, and engaging
+                in hobbies like 3D printing, assembling PCs, and exploring AR-VR
+                technologies. My expertise in web develop-ment is backed by
+                solid experience in JavaScript, HTML, CSS, React.js, Vue.js, C++
+                and more. This background fuels my excite-ment for crafting and
+                improving full stack experiences. Additionally, my hands-on
+                app-roach shines in hardware prototype building,
+              </p>
+            </div>
+            <div class="about-me-flex-item">
+              <p>
+                where I excel in bringing ideas to life through functional
+                prototypes and/or test setups. Through my studies I'm also adept
+                in UI/UX design, ensuring that the interfaces I build are not
+                only aesthetically pleasing but also user-friendly. Beyond my
+                technical skills, I'm known for my punctuality, organization,
+                and reli-ability. I thrive in team environments, com-fortably
+                adapting to either collaborative or leadership roles. My skills
+                and qualifications are broad and versatile, and I'm excited to
+                apply them in my next professional chapter.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
 
@@ -85,18 +97,26 @@
             <div class="line"></div>
             <div class="semester">7. Semester</div>
           </div>
-          <p class="project-headline">ULTRAVIEW</p>
+          <div class="project-headline-wrapper">
+            <p class="project-headline">ULTRAVIEW</p>
+            <a href="./" class="view-more">View More &rarr;</a>
+          </div>
           <p class="project-description">
             Bachelor project<br />Currently in progress but coming soon...
           </p>
         </article>
         <article class="reveal">
           <!-- MICROPLASTIC-SCANNER -->
-          <div class="semester-wrapper" style="margin-top: 160px">
-            <div class="line"></div>
+          <div class="semester-wrapper" style="margin-top: 320px">
             <div class="semester">6. Semester</div>
+            <div class="line"></div>
           </div>
-          <p class="project-headline">Microplastic-Scanner</p>
+          <div class="project-headline-wrapper">
+            <p class="project-headline">Microplastic-Scanner</p>
+            <a href="./microplastic-scanner.html" class="view-more"
+              >View More &rarr;</a
+            >
+          </div>
           <p class="project-description">
             An interactive exhibit to reveal how much microplastic is contained
             in daily objects.
@@ -115,11 +135,16 @@
 
         <article class="reveal">
           <!-- PRAXISSEMESTER -->
-          <div class="semester-wrapper" style="margin-top: 160px">
+          <div class="semester-wrapper" style="margin-top: 320px">
             <div class="line"></div>
             <div class="semester">5. Semester</div>
           </div>
-          <p class="project-headline">Internship Semester</p>
+          <div class="project-headline-wrapper">
+            <p class="project-headline">Internship Semester</p>
+            <a href="./praxissemester.html" class="view-more"
+              >View More &rarr;</a
+            >
+          </div>
           <p class="project-description">
             Web development / UI/UX Design internship at Fututice GmbH.
           </p>
@@ -127,7 +152,7 @@
         <div class="image-container">
           <a href="./praxissemester.html"
             ><img
-              src="./assets/redbullmuenchen.png"
+              src="./assets/redbullmuenchen.jpg"
               alt="redbullmuenchen"
               width="100%"
               id="redbullmuenchen"
@@ -138,11 +163,14 @@
         <!-- MEMORISE -->
         <div class="ellipse-orange"></div>
         <article class="reveal">
-          <div class="semester-wrapper" style="margin-top: 160px">
+          <div class="semester-wrapper" style="margin-top: 320px">
             <div class="semester">4. Semester</div>
             <div class="line"></div>
           </div>
-          <p class="project-headline">Memorise</p>
+          <div class="project-headline-wrapper">
+            <p class="project-headline">Memorise</p>
+            <a href="./memorise.html" class="view-more">View More &rarr;</a>
+          </div>
           <p class="project-description">
             A virtual reality learning concept for more fun and efficiency
             through the use of memory methods.
@@ -151,7 +179,7 @@
         <div class="image-container">
           <a href="./memorise.html"
             ><img
-              src="./assets/memorise.png"
+              src="./assets/memorise.jpg"
               alt="memorise"
               width="100%"
               id="memorise"
@@ -161,11 +189,14 @@
 
         <!-- QUELLE -->
         <article class="reveal">
-          <div class="semester-wrapper" style="margin-top: 160px">
-            <div class="semester">3. Semester</div>
+          <div class="semester-wrapper" style="margin-top: 320px">
             <div class="line"></div>
+            <div class="semester">3. Semester</div>
           </div>
-          <p class="project-headline">Quelle</p>
+          <div class="project-headline-wrapper">
+            <p class="project-headline">Quelle</p>
+            <a href="./quelle.html" class="view-more">View More &rarr;</a>
+          </div>
           <p class="project-description">
             Vending machine for customizable and sustainable soft drinks.
           </p>
@@ -173,7 +204,7 @@
         <div class="image-container">
           <a href="./quelle.html">
             <img
-              src="./assets/quelle.png"
+              src="./assets/quelle.jpg"
               alt="quelle"
               width="100%"
               id="quelle"
@@ -181,13 +212,18 @@
           /></a>
         </div>
 
-        <div class="threeExplanationWrapper">
-          <div class="threeExplanation">
-            A small collection of 3D models I designed and constructed for 3D
-            printing and rendering.<br />
-            It should just preview some of my work.
+        <!-- 3D SECTION -->
+        <article class="reveal">
+          <div class="semester-wrapper" style="margin-top: 320px">
+            <div class="semester">All Semesters</div>
+            <div class="line"></div>
           </div>
-        </div>
+          <p class="project-headline">3D Model Collection</p>
+          <p class="project-description">
+            A small collection of 3D models I designed and constructed for 3D
+            printing and rendering. It should just preview some of my work.
+          </p>
+        </article>
       </section>
     </section>
 
@@ -195,17 +231,13 @@
 
     <article class="reveal">
       <div class="contact-wrapper">
-        <img
-          height="300px"
-          style="border-radius: 50%"
-          src="./assets/portrait.jpg"
-          alt=""
-        />
         <p>
           Let's work something<br />
           out together!
         </p>
-        <a href="mailto:thillmannleonard@gmail.com">Contact me</a>
+        <a class="menu-contact" href="mailto:thillmannleonard@gmail.com"
+          >Contact me</a
+        >
       </div>
     </article>
 
@@ -216,7 +248,7 @@
       <div class="footer-wrapper">
         <div class="footer-logo-wrapper">
           <div class="logo">
-            <a href="./index.html" style="text-decoration: dashed; color: white"
+            <a href="./index.html" style="text-decoration: none; color: white"
               >Portfolio</a
             >
           </div>
